@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+	padding:0;
+	margin:0;
+}	
+body{
+	font-size: 62.5%;	
+  /** you can set this as 100% if you want **/
+	background-color: #666;
+}
+h1, h2, h3{
+	font-weight: 700;	
+	padding: 10px 20px;
+	color: #000;
+}
+h1{
+	font-size: 3.6rem;	
+	font-family: 'Cedarville Cursive', cursive;
+}
+h2{
+	font-size: 3.0rem;	
+	font-family: 'Bree Serif', serif;
+	background-color:##F5F1E8;
+}
+h3{
+	font-size: 2.4rem;
+	font-family: 'Bree Serif', serif;
+	color: #494949;	
+	background-color:#F5F1E8;
+}
+p, li, a{
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	color: #555;		
+	background-color:#F5F1E8;
+}
+p{
+	padding: 10px 20px;
+	font-size: 1.4rem;
+}
+li{
+	font-size: 1.4rem;
+}
+ol li{
+	padding: 6px 20px;
+	margin-left: 20px;
+	list-style-position:inside;
+}
+a{
+	font-size: 1.4rem;
+}	
+
+/***********************************
+					Layout
+***********************************/
+.wrapper{
+	background-color: #fff;	
+	max-width:1080px;
+	margin: 0 auto;	
+}
+.masthead{
+	max-width:1080px;
+	background-color:#776A6A;
+}
+.nav{
+	max-width:960px;
+}
+.navbar{
+	float:none;
+	width:100%;
+}
+
+.navbar li{
+	text-align:center;
+}
+
+@media screen and (min-width:680px){
+	.two, .three{
+	  padding: 1.25rem;
+	  float:left;
+	  width:50%;
+	}
+}
+
+
+@media screen and (min-width:720px) and (max-width:1080px){
+	.main, .two, .three{
+	width:33.33%;
+	float:left;
+	background-color:#F5F1E8;
+	}
+}
+
+@media screen and (min-width:1080px){
+	.nav{
+	width:24%;
+	float:left;
+	}
+	.main{
+	width:26%;
+	float:left;
+	}
+	.two, .three{
+	width:25%;
+}
+	}
+}
+
+.three{
+  background: #776A6A;
+  color:#FCFCFC;
+}
+.footer{
+	clear:left;
+}
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	padding: 30px 20px;
+}
+
+/***********************************
+					Navigation
+***********************************/
+@media all and (min-width: 600px){
+.navbar li{
+	float:left;	
+	width: 25%;  /* 960/4 = 240  works if the layout is 960*/
+	list-style:none;
+	
+}
+
+@media screen and (max-width: 499px){
+  
+  /* -- Navigation Items -- */
+  .navbar li{
+    width: 50%; 
+  }
+  
+}
+@media all and (min-width: 1080px){
+.navbar a{
+	display: block;	
+	padding: 8px 16px;
+	text-decoration: none;
+	color: #333;
+	background-color: #e4e4e4;
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	background-color: #333;
+}
+
+/***********************************
+					Content
+***********************************/
+.sidebar p{
+	font-size: 1.4rem;	
+}
+.instructions{
+	color: #C30;	
+}
+/***********************************
+					Footer
+***********************************/
+.footer p{
+	padding: 20px 20px;
+	font-size: 1.2rem;
+	color: #999;	
+	background-color: #e4e4e4;
+}
